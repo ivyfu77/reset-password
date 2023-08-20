@@ -1,10 +1,37 @@
-# Getting Started with Create React App
+# Reset Password Practice
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a practice with React and TypeScript to build a reset-password page with password validation.
+
+### Requirements
+#### `Password Should`
+- Not empty
+- At least 8 characters
+- At least 1 number
+- At least 2 special characters
+Or:
+- More than 15 characters with no restriction
+
+**_Note_**: The "Reset" button should only be enabled if the new password is valid.
+
+#### `Screenshots`
+
+![Kapture 2023-08-20 at 21 48 00](https://github.com/ivyfu77/reset-password/assets/23366740/7bc711c9-a725-4975-8a08-ba297c68b2e9)
+
+
+### Assumptions
+- Assume user gets this reset password link in a secure way (eg: by a registered email)
+
+### Limitations
+- It's just a validation PoC, clicking "Reset" button won't happen anything
+- Ideally should add `ConfirmPassword` functionalities to make sure user has remembered his new password, but doesn't have enough time to finish it
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `yarn install`
+
+To install all necessary dependencies and set up your environment.
 
 ### `yarn start`
 
@@ -28,19 +55,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
