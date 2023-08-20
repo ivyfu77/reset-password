@@ -1,5 +1,10 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -13,7 +18,7 @@ body {
   pointer-events: none;
 }
 
-.App-header {
+.App-container {
   background-color: #fff;
   min-height: 100vh;
   display: flex;
@@ -72,4 +77,56 @@ body {
 .btn--go {
   background-color: #fcc015;
   color: #fff;
+}
+
+/* View Styles */
+@media only screen and (max-width:640px) {
+  .reset-password {
+    width: 300px !important;
+  }
+  header {
+    font-size: 1em !important;
+  }
+  label {
+    font-size: 0.8em !important;
+  }
+}
+
+label {
+  display: block;
+  font-size: medium;
+  font-weight: 500;
+}
+
+header {
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+header p {
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.reset-password {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+
+.reset-btn-container {
+  margin: 24px auto;
+}
+
+.reset-password input {
+  width: 100%;
+  border-radius: 0.25rem;
+  border: 1px solid rgb(97, 97, 97);
+  height: 3em;
+  padding: 0 8px;
+  font-size: 15px;
+}
+
+.password-container {
+  margin-top: 32px;
 }
