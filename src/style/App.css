@@ -130,3 +130,22 @@ header p {
 .password-container {
   margin-top: 32px;
 }
+
+.notifications span {
+  display: block;
+}
+
+.notifications_header {
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.notifications_msg {
+  font-size: 12px;
+  color: #d4032c;
+}
+.notifications_msg.satisefied {
+  color: green;
+}
